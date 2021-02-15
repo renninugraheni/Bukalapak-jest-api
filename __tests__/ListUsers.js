@@ -1,12 +1,10 @@
-const epListUsers = require('../endpoints/epListUsers');
+const epPosts = require('../endpoints/epPosts');
 
 describe('test api list users', () => {
-    test('user can get list users at page 2',async () => {
-        const queryParam = {
-            page: 2,
-        };
-        const response = await epListUsers.epListUsers(queryParam);
+    test('user can get list users', async () => {
+        const response = await epPosts.epPosts;
+        console.log(response);
         expect(response.status).toEqual(200);
-        expect(response.body).toMatchSnapshot();
+        // expect(response.body).toMatchSnapshot();
     });
 });
