@@ -1,5 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`test api list users user can create post users 1`] = `
+Object {
+  "body": "motorcycle",
+  "id": 101,
+  "title": "recomendation",
+  "userId": 12,
+}
+`;
+
 exports[`test api list users user can get list users 1`] = `
 Array [
   Object {
