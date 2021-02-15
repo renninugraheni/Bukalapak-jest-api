@@ -2304,6 +2304,6 @@ const schema =  {
     ]
   };
 
-export default {
+module.exports = {
     schema,
 };
